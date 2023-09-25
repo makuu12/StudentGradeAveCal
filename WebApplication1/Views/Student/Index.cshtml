@@ -1,0 +1,63 @@
+﻿@{
+
+    ViewBag.Title = "Index";
+}
+<html>
+
+
+<head>
+    <title> </title>
+
+
+
+
+</head>
+<body>
+    <h2>COMPUTE GRADES USING ASP.NET MVC</h2>
+    @using (Html.BeginForm("Index", "Student", FormMethod.Get))
+
+    {
+        <div>
+            <div class="form-group">
+                <label for="english"> ENGLISH </label>
+                <input type="text" class="form-control" id="english" name="english" value="@Model.english" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="math"> MATH </label>
+                <input type="text" class="form-control" id="math" name="math" value="@Model.math" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="science"> SCIENCE </label>
+                <input type="text" class="form-control" id="science" name="science" value="@Model.science" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="total"> TOTAL </label>
+                <input type="text" class="form-control" id="total" name="total" value="@Model.total" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="average"> AVERAGE </label>
+                <input type="text" class="form-control" id="average" name="average" value="@Model.average" />
+            </div>
+
+            <div class="form-group">
+                <label for="grade"> GRADE </label>
+                <input type="text" class="form-control" id="grade" name="grade" value="@Model.grade" />
+            </div>
+
+            <button type="submit" class="btn btn-info" id="add" value="add"> COMPUTE </button>
+        </div>
+    }
+
+
+</body>
+
+
+</html>
